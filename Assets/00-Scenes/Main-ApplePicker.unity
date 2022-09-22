@@ -393,5 +393,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AppleTree
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 827844488279915962, guid: b8b049dac70f6d24d80fa518ddb5b0e6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b8b049dac70f6d24d80fa518ddb5b0e6, type: 3}
