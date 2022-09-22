@@ -309,12 +309,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -2218087318000772847, guid: b8b049dac70f6d24d80fa518ddb5b0e6, type: 3}
+      propertyPath: applePrefab
+      value: 
+      objectReference: {fileID: 5008491879283619352, guid: 35719a01807c3814eaff0a656f87ada5, type: 3}
+    - target: {fileID: -2218087318000772847, guid: b8b049dac70f6d24d80fa518ddb5b0e6, type: 3}
       propertyPath: leftAndRightEdge
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 827844488279915962, guid: b8b049dac70f6d24d80fa518ddb5b0e6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 827844488279915962, guid: b8b049dac70f6d24d80fa518ddb5b0e6, type: 3}
       propertyPath: leftAndRightEdge
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2389457554608830554, guid: b8b049dac70f6d24d80fa518ddb5b0e6, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3519309209742113705, guid: b8b049dac70f6d24d80fa518ddb5b0e6, type: 3}
       propertyPath: m_RootOrder
