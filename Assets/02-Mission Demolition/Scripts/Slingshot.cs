@@ -32,7 +32,7 @@ public bool             aimingMode;
 
 void Awake(){
         S = this;
-    Transform launchPointTrans = transform.FindChild("LaunchPoint");
+    Transform launchPointTrans = transform.Find("LaunchPoint");
     launchPoint = launchPointTrans.gameObject;
     launchPoint.SetActive(false);
     launchPos = launchPointTrans.position;
@@ -98,6 +98,8 @@ void Awake(){
             projectileRigidbody.velocity = -mouseDelta * velocityMult;
             FollowCam.POI = projectile;
             projectile = null;
+            MissionDemolition.ShotFired();
+            ProjectileLine.S.poi = projectile;
         }
     }
 
