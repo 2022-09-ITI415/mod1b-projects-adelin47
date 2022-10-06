@@ -14,9 +14,12 @@ public class SnakeController : MonoBehaviour
     public GameObject FoodPrefab;
     private List<GameObject> BodyParts = new List<GameObject>();
     private List<Vector3> PositionsHistory = new List<Vector3>();
+
+    Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
+        rb = GetComponent<Rigidbody>();
         GrowSnake();
         GrowSnake();
         GrowSnake();
@@ -27,7 +30,7 @@ public class SnakeController : MonoBehaviour
     void Update()
     {
         //move forward
-        transform.position += transform.forward * MoveSpeed * Time.deltaTime;
+        transform.Translate(transform.forward * MoveSpeed * Time.deltaTime);
 
         //steer
         float steerDirection = Input.GetAxis("Horizontal");
@@ -68,8 +71,9 @@ public class SnakeController : MonoBehaviour
 
    private void OnCollisionEnter(Collision other)
    {
-    if (other.gameObject.CompareTag("wall"))
-    {Destroy(other.gameObject);
+    if (other.gameObject.tag == "wall")
+    {
+        Destroy(gameObject);
     }
    }
 
