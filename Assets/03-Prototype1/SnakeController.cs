@@ -57,13 +57,20 @@ public class SnakeController : MonoBehaviour
         //Instantiate(FoodPrefab, new Vector3(Random.Range(-10.0f, 10.0f)))
     }
 
-    if (other.gameObject.CompareTag("wall"))
-    {
+   // if (other.gameObject.CompareTag("wall"))
+   // {
         //other.gameObject.SetActive(false);
        // Destroy(BodyParts);
         //Instantiate(FoodPrefab, new Vector3(Random.Range(-10.0f, 10.0f)))
-    }
+  //  }
  
+   }
+
+   private void OnCollisionEnter(Collision other)
+   {
+    if (other.gameObject.CompareTag("wall"))
+    {Destroy(other.gameObject);
+    }
    }
 
 
