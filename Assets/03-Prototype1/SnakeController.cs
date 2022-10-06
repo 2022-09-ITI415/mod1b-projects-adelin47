@@ -73,6 +73,7 @@ public class SnakeController : MonoBehaviour
    {
     if (other.gameObject.tag == "wall")
     {
+        FindObjectOfType<Controller>().ShowGameOverScreen();
         Destroy(gameObject);
     }
    }
@@ -85,3 +86,4 @@ public class SnakeController : MonoBehaviour
         BodyParts.Add(body);
     }
 }
+    
